@@ -1,11 +1,11 @@
 <script>
     import { fade, fly } from "svelte/transition";
 
-    const downloadResume = async () => {
-        const response = await fetch('/resume');
-        const pdfBlob = await response.blob();
-        const pdfUrl = URL.createObjectURL(pdfBlob);
-        window.open(pdfUrl, "_blank");
+    const downloadResume = () => {
+        // const response = await fetch('/resume');
+        // const pdfBlob = await response.blob();
+        // const pdfUrl = URL.createObjectURL(pdfBlob);
+        window.open('/resume.pdf', "_blank");
     };
 </script>
 
