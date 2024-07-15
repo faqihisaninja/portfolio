@@ -2,7 +2,7 @@ import fs from 'fs';
 
 export async function GET() {
 	const file = './resume.pdf';
-	const body = fs.readFileSync('./data/resume.pdf');
+	const body = fs.readFileSync('./static/resume.pdf');
 
 	const status = 200;
 	const headers = {
