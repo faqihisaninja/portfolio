@@ -16,7 +16,7 @@
             <p class="text">
                 Hi my name is Abdurrahman Faqih.
                 I have over 3 years of experience working as a software engineer.
-                I am currently Masters of Information Technology at the Swinburne University of Technology.
+                I am currently studying Masters of Information Technology at the Swinburne University of Technology.
                 My skills lie mostly in Frontend Development although I have full stack knowledge
                 and experience. Recently, I have taken an interest in Artificial Technology (AI)
                 and Machine Learning (ML).
