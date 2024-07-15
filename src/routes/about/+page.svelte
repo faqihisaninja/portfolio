@@ -2,9 +2,6 @@
     import { fade, fly } from "svelte/transition";
 
     const downloadResume = () => {
-        // const response = await fetch('/resume');
-        // const pdfBlob = await response.blob();
-        // const pdfUrl = URL.createObjectURL(pdfBlob);
         window.open('/resume.pdf', "_blank");
     };
 </script>
@@ -189,7 +186,8 @@
 
 <style>
     .container {
-        width: calc(100% - 350px - 240px);
+        width: calc(100% - 350px);
+        box-sizing: border-box;
         position: absolute;
         top: 0;
         right: 0;
@@ -324,7 +322,6 @@
 
     @media only screen and (max-width: 1420px) {
         .container {
-        width: calc(100% - 350px - 80px);
             padding: 0 40px;
         }
     }

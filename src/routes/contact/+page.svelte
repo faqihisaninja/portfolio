@@ -4,7 +4,8 @@
 
 <style>
     .container {
-        width: calc(100% - 350px - 240px);
+        width: calc(100% - 350px);
+        box-sizing: border-box;
         position: absolute;
         top: 0;
         right: 0;
