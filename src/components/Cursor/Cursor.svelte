@@ -1,36 +1,23 @@
 <script>
-	import { spring } from 'svelte/motion';
-	import { writable } from 'svelte/store';
-
-    export let hover = false;
-
-	let coords = spring({ x: 50, y: 50 }, {
-		stiffness: 0.03,
-		damping: 0.3
-	});
-    let coords2 = writable({ x: 50, y: 50 });
+    import { coord, hover } from './stores';
 </script>
 
 <svelte:window
 	on:mousemove={(e) => {
-		coords.set({ x: e.clientX, y: e.clientY });
-		coords2.set({ x: e.clientX, y: e.clientY });
+		coord.set({ x: e.clientX, y: e.clientY });
 	}} />
 <svg>
 	<circle
         class="outer"
-		cx={$coords.x}
-		cy={$coords.y}
-		r={hover ? 30 : 10}
-        fill={hover ? "#6a6a6a61" : "none"}
-        stroke={hover ? "none" : "#6a6a6a61"}
-        stroke-width={hover ? 0 : 2}
+        class:hover={$hover}
+		cx={$coord.x}
+		cy={$coord.y}
 	/>
 	<circle
-		cx={$coords2.x}
-		cy={$coords2.y}
-		r={3}
-        fill={hover ? "none" : "#676767"}
+        class="inner"
+        class:hover={$hover}
+		cx={$coord.x}
+		cy={$coord.y}
 	/>
 </svg>
 
@@ -44,7 +31,26 @@
         pointer-events: none;
         z-index: 9999;
 	}
-	.outer {
-        /* transition: all .1s ease; */
-	}
+    .outer {
+        r: 13;
+        fill: none;
+        stroke: #6a6a6a;
+        stroke-width: 2;
+        transition: all .1s ease;
+    }
+    .outer.hover {
+        r: 0;
+        fill: #4d4d4d;
+        stroke: none;
+    }
+    .inner {
+        r: 3;
+        fill: #303030;
+        transition: r .1s ease;
+    }
+    .inner.hover {
+        r: 30;
+        fill: #6a6a6a61;
+        transition: r .1s ease;
+    }
 </style>
