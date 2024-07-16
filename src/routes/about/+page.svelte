@@ -1,5 +1,6 @@
 <script>
     import { fade, fly } from "svelte/transition";
+    import { hover } from "../../components/Cursor/stores";
 
     const downloadResume = () => {
         window.open('/resume.pdf', "_blank");
@@ -18,7 +19,12 @@
                 and experience. Recently, I have taken an interest in Artificial Technology (AI)
                 and Machine Learning (ML).
             </p>
-            <button class="download" on:click={downloadResume}>
+            <button
+                class="download"
+                on:click={downloadResume}
+                on:mouseenter={() => hover.set(true)}
+                on:mouseleave={() => hover.set(false)}
+            >
                 <div class="wrapper">
                     <span class="before">Download CV</span>
                     <span class="after">Download CV</span>
@@ -54,11 +60,21 @@
                 </li>
                 <li>
                     <span class="title">Github</span>
-                    <a class="value" href="https://github.com/abdurrahmanfaqihiskandar">abdurrahmanfaqihiskandar</a>
+                    <a
+                        class="value"
+                        href="https://github.com/abdurrahmanfaqihiskandar"
+                        on:mouseenter={() => hover.set(true)}
+                        on:mouseleave={() => hover.set(false)}
+                    >abdurrahmanfaqihiskandar</a>
                 </li>
                 <li>
                     <span class="title">LinkedIn</span>
-                    <a class="value" href="https://linkedin.com/in/abdurrahman-faqih-iskandar">linkedin.com/in/abdurrahman-faqih-iskandar</a>
+                    <a
+                        class="value"
+                        href="https://linkedin.com/in/abdurrahman-faqih-iskandar"
+                        on:mouseenter={() => hover.set(true)}
+                        on:mouseleave={() => hover.set(false)}
+                    >linkedin.com/in/abdurrahman-faqih-iskandar</a>
                 </li>
             </ul>
         </div>
