@@ -1,4 +1,5 @@
 <script>
+    import Cursor from '../components/Cursor/Cursor.svelte';
 	import MenuTablet from '../components/MenuTablet/MenuTablet.svelte';
     import Menu from "../components/Menu/Menu.svelte";
 </script>
@@ -13,6 +14,7 @@
     <main class="mainWrapper">
         <slot />
     </main>
+    <Cursor />
 </div>
 
 <style>

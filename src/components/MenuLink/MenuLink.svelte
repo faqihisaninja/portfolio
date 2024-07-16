@@ -33,11 +33,11 @@
     li:hover a:not(.tablet),
     li.isActive a:not(.tablet) {
         color: #fff;
-        transition: color 0.2s cubic-bezier(0.61,0.29,0,0.89);;
+        transition: color 0.2s cubic-bezier(0.61,0.29,0,0.89);
     }
     li:hover a.tablet,
     li.isActive a.tablet {
         color: #bbb;
-        transition: color 0.2s cubic-bezier(0.61,0.29,0,0.89);;
+        transition: color 0.2s cubic-bezier(0.61,0.29,0,0.89);
     }
 </style>
