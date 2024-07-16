@@ -1,11 +1,13 @@
 <script>
+    import { hover } from "../Cursor/stores";
+
     export let isActive = false;
     export let href = "";
     export let text = "";
     export let tablet = false;
 </script>
 
-<li class:isActive>
+<li class:isActive on:mouseenter={() => hover.set(true)} on:mouseleave={() => hover.set(false)}>
     <a class:tablet {href}>{text}</a>
 </li>
 

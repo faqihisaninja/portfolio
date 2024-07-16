@@ -1,5 +1,6 @@
 <script>
     import { page } from "$app/stores";
+    import { hover } from "../Cursor/stores";
     
     import MenuLink from "../MenuLink/MenuLink.svelte";
 </script>
@@ -7,7 +8,12 @@
 <nav class="menuWrapper">
     <div class="menuInner">
         <div class="logo">
-            <a class="logoText" href="/">Faqih</a>
+            <a
+                class="logoText"
+                href="/"
+                on:mouseenter={() => hover.set(true)}
+                on:mouseleave={() => hover.set(false)}
+            >Faqih</a>
         </div>
         <div class="menu">
             <ul>
@@ -18,7 +24,12 @@
             </ul>
         </div>
         <div class="links">
-            <a href="https://github.com/abdurrahmanfaqihiskandar" class="links">
+            <a
+                href="https://github.com/abdurrahmanfaqihiskandar"
+                class="links"
+                on:mouseenter={() => hover.set(true)}
+                on:mouseleave={() => hover.set(false)}
+            >
                 <img class="github" src="/github-mark/github-mark-white.png" alt="Github logo" />
             </a>
         </div>
