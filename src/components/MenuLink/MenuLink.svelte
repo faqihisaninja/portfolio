@@ -20,7 +20,6 @@
     a {
         color: #bbb;
         text-decoration: none;
-        font-family: "Syne", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;

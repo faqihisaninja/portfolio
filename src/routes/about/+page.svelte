@@ -226,7 +226,6 @@
         padding-left: 50px;
     }
     .sectionTitle {
-        font-family: 'Syne', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
     }
@@ -287,7 +286,6 @@
         transition: all .3s ease;
     }
     .text {
-        font-family: 'Syne', sans-serif;
         font-size: 15px;
         line-height: 1.8;
         word-wrap: break-word;

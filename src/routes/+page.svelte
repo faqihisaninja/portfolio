@@ -51,7 +51,6 @@
         width: 50%;
     }
     .name {
-        font-family: "Syne", sans-serif;
         line-height: 1.8;
         font-weight: 400;
         text-transform: uppercase;
@@ -59,7 +58,6 @@
     }
     .title {
         position: absolute;
-        font-family: "Syne", sans-serif;
         font-size: 31px;
         text-transform: uppercase;
         white-space: nowrap;
