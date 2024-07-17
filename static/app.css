@@ -13,6 +13,6 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, p, a, li, span, div {
+h1, h2, h3, p, a, li, span, div, input, textarea {
     font-family: 'Syne', sans-serif;
 }
