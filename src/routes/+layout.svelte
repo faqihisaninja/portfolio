@@ -100,6 +100,9 @@
 		.layout {
 			flex-direction: column;
 		}
+		.loadAnimLeft,
+		.loadAnimRight,
+		.loaderLine,
 		.sideBar {
 			display: none;
 		}
