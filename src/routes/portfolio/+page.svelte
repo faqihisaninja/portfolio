@@ -1,8 +1,14 @@
 <script>
+	import { fade, fly } from 'svelte/transition';
+
 	import Card from '../../components/Card/Card.svelte';
 </script>
 
-<div class="container">
+<div
+	class="container"
+	in:fly={{ delay: 500, duration: 1500, x: '-5%' }}
+	out:fade={{ duration: 500 }}
+>
 	<div class="containerWrapper">
 		<h1 class="pageTitle">// Portfolio</h1>
 		<div class="projects">

@@ -1,5 +1,6 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
+
 	import { hover } from '../../components/Cursor/stores';
 	import Button from '../../components/Button/Button.svelte';
 
@@ -8,7 +9,7 @@
 	};
 </script>
 
-<div class="container">
+<div transition:fade class="container">
 	<section
 		in:fly={{ delay: 500, duration: 500, x: '-5%' }}
 		out:fade={{ duration: 500 }}

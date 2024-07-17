@@ -1,4 +1,6 @@
 <script>
+	import { fade, fly } from 'svelte/transition';
+
 	import Button from '../../components/Button/Button.svelte';
 
 	let name = '';
@@ -8,7 +10,11 @@
 	let message = '';
 </script>
 
-<div class="container">
+<div
+	class="container"
+	in:fly={{ delay: 500, duration: 1500, x: '-5%' }}
+	out:fade={{ duration: 500 }}
+>
 	<h1 class="pageTitle">// Contact</h1>
 	<form class="form">
 		<div class="row">
