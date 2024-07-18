@@ -5,9 +5,16 @@
 
 	let name = '';
 	let email = '';
-	let phone = '';
 	let subject = '';
 	let message = '';
+
+	let emailErr = false;
+
+	const validateEmail = () => {
+		const emailRegex =
+			/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+		emailErr = !emailRegex.test(email);
+	};
 </script>
 
 <div
@@ -19,16 +26,18 @@
 	<form class="form">
 		<div class="row">
 			<input bind:value={name} type="text" placeholder="Name" />
-			<input bind:value={email} type="text" placeholder="Email" />
+			{#if emailErr}
+				<span class="errMsg">Not a valid email</span>
+			{/if}
+			<input class:error={emailErr} bind:value={email} type="text" placeholder="Email" />
 		</div>
 		<div class="row">
-			<input bind:value={phone} type="text" placeholder="Phone" />
 			<input bind:value={subject} type="text" placeholder="Subject" />
 		</div>
 		<div class="row">
 			<textarea class="messageInput" bind:value={message} placeholder="Message" />
 		</div>
-		<Button title="Send message" />
+		<Button title="Send message" onClick={validateEmail} />
 	</form>
 </div>
 
@@ -67,6 +76,7 @@
 		flex: 1;
 	}
 	.form .row {
+		position: relative;
 		display: flex;
 		width: 100%;
 		gap: 15px;
@@ -74,6 +84,16 @@
 	.messageInput {
 		height: 150px;
 		resize: none;
+	}
+	.error {
+		border: 1px solid rgba(255, 0, 0, 0.5) !important;
+	}
+	.errMsg {
+		position: absolute;
+		top: -15px;
+		left: 0;
+		font-size: 10px;
+		color: red;
 	}
 
 	@media only screen and (max-width: 1600px) {
@@ -84,7 +104,6 @@
 	@media only screen and (max-width: 1024px) {
 		.container {
 			width: 100%;
-			/* padding: 40px; */
 		}
 		.pageTitle {
 			margin-bottom: 50px;
