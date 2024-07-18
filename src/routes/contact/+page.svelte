@@ -81,4 +81,24 @@
 			padding: 80px 40px;
 		}
 	}
+	@media only screen and (max-width: 1024px) {
+		.container {
+			width: 100%;
+			/* padding: 40px; */
+		}
+		.pageTitle {
+			margin-bottom: 50px;
+		}
+		.form {
+			display: block;
+		}
+		.form .row {
+			display: block;
+		}
+		.form input,
+		.form textarea {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
 </style>
