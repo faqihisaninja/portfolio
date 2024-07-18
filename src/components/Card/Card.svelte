@@ -6,7 +6,9 @@
 </script>
 
 <div class="card">
-	<img src={imgUrl} alt={imgAlt} />
+	<div class="image">
+		<img src={imgUrl} alt={imgAlt} />
+	</div>
 	<div class="details">
 		<h1 class="cardTitle">{title}</h1>
 		<p class="cardDes">{description}</p>
@@ -20,9 +22,13 @@
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		box-sizing: border-box;
 	}
+	.image {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10px;
+	}
 	img {
 		max-width: 100%;
-		margin-bottom: 10px;
 		object-fit: cover;
 	}
 	.details {
@@ -37,5 +43,10 @@
 		font-size: 15px;
 		color: #767676;
 		margin: 10px 0;
+	}
+	@media only screen and (max-width: 1024px) {
+		.card {
+			width: 100%;
+		}
 	}
 </style>

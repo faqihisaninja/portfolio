@@ -63,4 +63,22 @@
 			max-width: 968px;
 		}
 	}
+	@media only screen and (max-width: 1024px) {
+		.container {
+			display: block;
+			width: 100%;
+			padding: 0 40px 0 40px;
+		}
+		.containerWrapper {
+			width: 100%;
+			padding: 40px 0;
+		}
+		.pageTitle {
+			margin-bottom: 50px;
+		}
+		.projects {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 </style>
