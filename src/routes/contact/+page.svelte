@@ -1,7 +1,10 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
+	import { enhance } from '$app/forms';
 
 	import Button from '../../components/Button/Button.svelte';
+
+	export let form;
 
 	let name = '';
 	let email = '';
@@ -23,21 +26,32 @@
 	out:fade={{ duration: 500 }}
 >
 	<h1 class="pageTitle">// Contact</h1>
-	<form class="form">
+	<form method="POST" class="form" use:enhance>
 		<div class="row">
-			<input bind:value={name} type="text" placeholder="Name" />
-			{#if emailErr}
+			<input value={form?.name ?? ''} type="text" name="name" placeholder="Name" />
+			{#if form?.invalidEmail}
 				<span class="errMsg">Not a valid email</span>
 			{/if}
-			<input class:error={emailErr} bind:value={email} type="text" placeholder="Email" />
+			<input
+				class:error={form?.invalidEmail}
+				value={form?.email ?? ''}
+				type="text"
+				name="email"
+				placeholder="Email"
+			/>
 		</div>
 		<div class="row">
-			<input bind:value={subject} type="text" placeholder="Subject" />
+			<input value={form?.subject ?? ''} type="text" name="subject" placeholder="Subject" />
 		</div>
 		<div class="row">
-			<textarea class="messageInput" bind:value={message} placeholder="Message" />
+			<textarea
+				value={form?.messageBody ?? ''}
+				class="messageInput"
+				name="message"
+				placeholder="Message"
+			/>
 		</div>
-		<Button title="Send message" onClick={validateEmail} />
+		<Button title="Send message" />
 	</form>
 </div>
 
