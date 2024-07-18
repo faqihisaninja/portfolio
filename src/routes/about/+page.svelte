@@ -292,4 +292,25 @@
 			padding: 0 40px;
 		}
 	}
+
+	@media only screen and (max-width: 1024px) {
+		.container {
+			width: 100%;
+			padding: 0 40px 0 40px;
+		}
+		section {
+			display: block;
+			padding: 0;
+			border: none;
+		}
+		div.left,
+		div.right {
+			width: 100%;
+			padding: 40px 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+		.past .right {
+			border: none;
+		}
+	}
 </style>
