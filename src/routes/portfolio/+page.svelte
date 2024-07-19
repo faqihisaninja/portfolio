@@ -33,6 +33,20 @@
 				link="https://abdurrahmanfaqihiskandar.github.io/html-css/"
 				githubLink="https://github.com/abdurrahmanfaqihiskandar/html-css"
 			/>
+			<Card
+				imgUrl="portfolio/huggingface.png"
+				title="Swinburne FAQ bot"
+				description="Finetuning of pre-trained AI model on Huggingface for an FAQ chatbot"
+				link="https://colab.research.google.com/drive/1ktTpKcBx4oQMTbe8IGtxQCC4q_AC7gov"
+				githubLink="https://colab.research.google.com/drive/1ktTpKcBx4oQMTbe8IGtxQCC4q_AC7gov"
+			/>
+			<Card
+				imgUrl="portfolio/clustering.png"
+				title="Clustering Research Articles"
+				description="Clustering research articles based on abstracts"
+				link="https://colab.research.google.com/drive/1p0IbrNCVhiZ5BhpGMt-19L_i47C5ajmS"
+				githubLink="https://colab.research.google.com/drive/1p0IbrNCVhiZ5BhpGMt-19L_i47C5ajmS"
+			/>
 		</div>
 	</div>
 </div>
