@@ -1,8 +1,12 @@
 <script>
+	import { hover } from '../Cursor/stores';
+
 	export let imgUrl = '';
 	export let imgAlt = '';
 	export let title = '';
 	export let description = '';
+	export let link = '';
+	export let githubLink = '';
 </script>
 
 <div class="card">
@@ -10,8 +14,22 @@
 		<img src={imgUrl} alt={imgAlt} />
 	</div>
 	<div class="details">
-		<h1 class="cardTitle">{title}</h1>
+		<h1 class="cardTitle">
+			<a
+				href={link}
+				target="_blank"
+				on:mouseenter={() => hover.set(true)}
+				on:mouseleave={() => hover.set(false)}>{title}</a
+			>
+		</h1>
 		<p class="cardDes">{description}</p>
+		<a
+			href={githubLink}
+			target="_blank"
+			on:mouseenter={() => hover.set(true)}
+			on:mouseleave={() => hover.set(false)}
+			><img class="github" src="github-mark/github-mark.svg" alt="Github mark" />
+		</a>
 	</div>
 </div>
 
@@ -39,10 +57,17 @@
 		font-size: 18px;
 		margin: 0;
 	}
+	.cardTitle a {
+		text-decoration: none;
+		color: #000;
+	}
 	.cardDes {
 		font-size: 15px;
 		color: #767676;
 		margin: 10px 0;
+	}
+	.github {
+		width: 20%;
 	}
 	@media only screen and (max-width: 1024px) {
 		.card {

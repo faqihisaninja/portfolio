@@ -12,8 +12,20 @@
 	<div class="containerWrapper">
 		<h1 class="pageTitle">// Portfolio</h1>
 		<div class="projects">
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
+			<Card
+				imgUrl="portfolio/bright-boost.jpeg"
+				title="Bright Boost"
+				description="After school scheduling system using VueJS, Fastify and MongoDB"
+				link="https://tipg54.netlify.app"
+				githubLink="https://github.com/Swin-TIP"
+			/>
+			<Card
+				imgUrl="portfolio/carpark-system.png"
+				title="Carpark System"
+				description="Carpark system created using Java GUI"
+				link="https://github.com/abdurrahmanfaqihiskandar/CarparkSystem"
+				githubLink="https://github.com/abdurrahmanfaqihiskandar/CarparkSystem"
+			/>
 			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
 			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
 			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
