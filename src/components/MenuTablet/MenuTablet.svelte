@@ -34,12 +34,11 @@
 			href="/contact"
 			isActive={$page.url.pathname === '/contact'}
 		/>
+		<a href="https://github.com/abdurrahmanfaqihiskandar" class="links">
+			<img class="github" src="/github-mark/github-mark.png" alt="Github logo" />
+		</a>
 	</ul>
 </nav>
-
-<!-- <div class="links">
-    <img class="github" src="/github-mark/github-mark-white.png" alt="Github logo" />
-</div> -->
 
 <style>
 	.topBarWrapper {
@@ -79,5 +78,8 @@
 	}
 	.showMenu.sideMenu {
 		right: 0;
+	}
+	.github {
+		width: 15%;
 	}
 </style>

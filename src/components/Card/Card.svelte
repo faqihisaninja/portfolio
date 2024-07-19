@@ -73,5 +73,15 @@
 		.card {
 			width: 100%;
 		}
+		.github {
+			width: 50px;
+			margin-top: 5px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.github {
+			width: 15%;
+		}
 	}
 </style>
