@@ -26,12 +26,13 @@
 				link="https://github.com/abdurrahmanfaqihiskandar/CarparkSystem"
 				githubLink="https://github.com/abdurrahmanfaqihiskandar/CarparkSystem"
 			/>
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
-			<Card imgUrl="self-photo.jpg" title="Faqih" description="I am me" />
+			<Card
+				imgUrl="portfolio/cloudielocks.png"
+				title="HTML CSS JS PHP"
+				description="Plain HTML CSS JS PHP project"
+				link="https://abdurrahmanfaqihiskandar.github.io/html-css/"
+				githubLink="https://github.com/abdurrahmanfaqihiskandar/html-css"
+			/>
 		</div>
 	</div>
 </div>
