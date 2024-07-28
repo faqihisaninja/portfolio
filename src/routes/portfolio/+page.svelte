@@ -47,6 +47,13 @@
 				link="https://colab.research.google.com/drive/1p0IbrNCVhiZ5BhpGMt-19L_i47C5ajmS"
 				githubLink="https://colab.research.google.com/drive/1p0IbrNCVhiZ5BhpGMt-19L_i47C5ajmS"
 			/>
+			<Card
+				imgUrl="portfolio/flappy-bird.png"
+				title="Flappy bird clone"
+				description="Messing around with the Canvas API"
+				link="https://flappy-floppy.netlify.app/"
+				githubLink="https://github.com/abdurrahmanfaqihiskandar/flappy-bird"
+			/>
 		</div>
 	</div>
 </div>
