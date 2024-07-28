@@ -11,7 +11,7 @@
 
 <div class="card">
 	<div class="image">
-		<img src={imgUrl} alt={imgAlt} />
+		<img class="projectImg" src={imgUrl} alt={imgAlt} />
 	</div>
 	<div class="details">
 		<h1 class="cardTitle">
@@ -41,11 +41,15 @@
 		box-sizing: border-box;
 	}
 	.image {
-		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		margin-bottom: 10px;
+		height: 50%;
 	}
-	img {
+	.projectImg {
+		width: 80%;
 		max-width: 100%;
 		object-fit: cover;
 	}
@@ -67,21 +71,23 @@
 		margin: 10px 0;
 	}
 	.github {
-		width: 20%;
+		width: 30px;
 	}
 	@media only screen and (max-width: 1024px) {
 		.card {
 			width: 100%;
 		}
+		.projectImg {
+			width: 60%;
+		}
 		.github {
-			width: 50px;
 			margin-top: 5px;
 		}
 	}
 
 	@media only screen and (max-width: 400px) {
-		.github {
-			width: 15%;
+		.projectImg {
+			width: 60%;
 		}
 	}
 </style>
