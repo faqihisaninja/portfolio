@@ -1,9 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 
-	import Cursor from '../components/Cursor/Cursor.svelte';
-	import MenuTablet from '../components/MenuTablet/MenuTablet.svelte';
-	import Menu from '../components/Menu/Menu.svelte';
+	import Cursor from '$comp/Cursor/Cursor.svelte';
+	import MenuTablet from '$comp/MenuTablet/MenuTablet.svelte';
+	import Menu from '$comp/Menu/Menu.svelte';
 
 	let initLoad = true;
 	let startLoad = false;

@@ -1,8 +1,8 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 
-	import { hover } from '../../components/Cursor/stores';
-	import Button from '../../components/Button/Button.svelte';
+	import { hover } from '$comp/Cursor/stores';
+	import Button from '$comp/Button/Button.svelte';
 
 	const downloadResume = () => {
 		window.open('/resume.pdf', '_blank');

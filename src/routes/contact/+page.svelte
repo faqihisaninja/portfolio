@@ -2,7 +2,7 @@
 	import { fade, fly } from 'svelte/transition';
 	import { enhance } from '$app/forms';
 
-	import Button from '../../components/Button/Button.svelte';
+	import Button from '$comp/Button/Button.svelte';
 
 	export let form;
 

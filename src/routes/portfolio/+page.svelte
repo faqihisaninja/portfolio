@@ -1,7 +1,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 
-	import Card from '../../components/Card/Card.svelte';
+	import Card from '$comp/Card/Card.svelte';
 </script>
 
 <div
