@@ -13,46 +13,46 @@
 		<h1 class="pageTitle">// Portfolio</h1>
 		<div class="projects">
 			<Card
-				imgUrl="portfolio/bright-boost.jpeg"
-				title="Bright Boost"
-				description="After school scheduling system using VueJS, Fastify and MongoDB"
-				link="https://tipg54.netlify.app"
-				githubLink="https://github.com/Swin-TIP"
+				imgUrl="portfolio/audio-viz.png"
+				title="Audio Visualizer"
+				description="3D audio visualiztion using NextJS and ThreeJS"
+				link="https://just-play-it.netlify.app/"
+				githubLink="https://github.com/faqihisaninja/song-visualizer"
 			/>
 			<Card
 				imgUrl="portfolio/carpark-system.png"
 				title="Carpark System"
 				description="Carpark system created using Java GUI"
-				link="https://github.com/abdurrahmanfaqihiskandar/CarparkSystem"
-				githubLink="https://github.com/abdurrahmanfaqihiskandar/CarparkSystem"
+				link="https://github.com/faqihisaninja/CarparkSystem"
+				githubLink="https://github.com/faqihisaninja/CarparkSystem"
 			/>
-			<Card
+			<!-- <Card
 				imgUrl="portfolio/cloudielocks.png"
 				title="HTML CSS JS PHP"
 				description="Plain HTML CSS JS PHP project"
-				link="https://abdurrahmanfaqihiskandar.github.io/html-css/"
-				githubLink="https://github.com/abdurrahmanfaqihiskandar/html-css"
+				link="https://faqihisaninja.github.io/html-css/"
+				githubLink="https://github.com/faqihisaninja/html-css"
+			/> -->
+			<Card
+				imgUrl="portfolio/flappy-bird.png"
+				title="Flappy bird clone"
+				description="Creating a flappy bird game clone with the Canvas API"
+				link="https://flappy-floppy.netlify.app/"
+				githubLink="https://github.com/faqihisaninja/flappy-bird"
 			/>
 			<Card
 				imgUrl="portfolio/huggingface.png"
-				title="Swinburne FAQ bot"
+				title="AI FAQ bot"
 				description="Finetuning of pre-trained AI model on Huggingface for an FAQ chatbot"
 				link="https://colab.research.google.com/drive/1ktTpKcBx4oQMTbe8IGtxQCC4q_AC7gov"
 				githubLink="https://colab.research.google.com/drive/1ktTpKcBx4oQMTbe8IGtxQCC4q_AC7gov"
 			/>
 			<Card
 				imgUrl="portfolio/clustering.png"
-				title="Clustering Research Articles"
+				title="ML Clustering of Research Articles"
 				description="Clustering research articles based on abstracts"
 				link="https://colab.research.google.com/drive/1p0IbrNCVhiZ5BhpGMt-19L_i47C5ajmS"
 				githubLink="https://colab.research.google.com/drive/1p0IbrNCVhiZ5BhpGMt-19L_i47C5ajmS"
-			/>
-			<Card
-				imgUrl="portfolio/flappy-bird.png"
-				title="Flappy bird clone"
-				description="Messing around with the Canvas API"
-				link="https://flappy-floppy.netlify.app/"
-				githubLink="https://github.com/abdurrahmanfaqihiskandar/flappy-bird"
 			/>
 		</div>
 	</div>
