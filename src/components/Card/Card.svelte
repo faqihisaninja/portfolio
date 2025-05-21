@@ -23,14 +23,16 @@
 			>
 		</h1>
 		<p class="cardDes">{description}</p>
-		<a
-			class="github-link"
-			href={githubLink}
-			target="_blank"
-			on:mouseenter={() => hover.set(true)}
-			on:mouseleave={() => hover.set(false)}
-			><img class="github" src="github-mark/github-mark.svg" alt="Github mark" />
-		</a>
+		{#if githubLink !== ''}
+			<a
+				class="github-link"
+				href={githubLink}
+				target="_blank"
+				on:mouseenter={() => hover.set(true)}
+				on:mouseleave={() => hover.set(false)}
+				><img class="github" src="github-mark/github-mark.svg" alt="Github mark" />
+			</a>
+		{/if}
 	</div>
 </div>
 

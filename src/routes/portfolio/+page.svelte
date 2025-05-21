@@ -13,6 +13,12 @@
 		<h1 class="pageTitle">// Portfolio</h1>
 		<div class="projects">
 			<Card
+				imgUrl="portfolio/hyan-logo-full.png"
+				title="Hyan Consulting"
+				description="HR Company Website Development using NextJS"
+				link="https://hyanconsulting.com/"
+			/>
+			<Card
 				imgUrl="portfolio/audio-viz.png"
 				title="Audio Visualizer"
 				description="3D audio visualiztion using NextJS and ThreeJS"
@@ -26,13 +32,6 @@
 				link="https://github.com/faqihisaninja/CarparkSystem"
 				githubLink="https://github.com/faqihisaninja/CarparkSystem"
 			/>
-			<!-- <Card
-				imgUrl="portfolio/cloudielocks.png"
-				title="HTML CSS JS PHP"
-				description="Plain HTML CSS JS PHP project"
-				link="https://faqihisaninja.github.io/html-css/"
-				githubLink="https://github.com/faqihisaninja/html-css"
-			/> -->
 			<Card
 				imgUrl="portfolio/flappy-bird.png"
 				title="Flappy bird clone"
