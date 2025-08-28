@@ -19,18 +19,17 @@
 				link="https://hyanconsulting.com/"
 			/>
 			<Card
+				imgUrl="portfolio/clinfinder.png"
+				title="Clinfinder"
+				description="Medical Conference Directory"
+				link="https://clinfinder-seven.vercel.app"
+			/>
+			<Card
 				imgUrl="portfolio/audio-viz.png"
 				title="Audio Visualizer"
 				description="3D audio visualiztion using NextJS and ThreeJS"
 				link="https://just-play-it.netlify.app/"
 				githubLink="https://github.com/faqihisaninja/song-visualizer"
-			/>
-			<Card
-				imgUrl="portfolio/carpark-system.png"
-				title="Carpark System"
-				description="Carpark system created using Java GUI"
-				link="https://github.com/faqihisaninja/CarparkSystem"
-				githubLink="https://github.com/faqihisaninja/CarparkSystem"
 			/>
 			<Card
 				imgUrl="portfolio/flappy-bird.png"
