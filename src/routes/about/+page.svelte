@@ -19,10 +19,9 @@
 			<p class="sectionTitle">// Biography</p>
 			<p class="text">
 				Hi my name is Abdurrahman Faqih. I have over 3 years of experience working as a
-				software engineer. I am currently pursuing a Master's in Information Technology at
-				the Swinburne University of Technology. My skills lie in both Frontend and Backend
-				Development with a heavier interest on frontend development. Recently, I have taken
-				an interest in Artificial Technology (AI) and Machine Learning (ML).
+				software engineer. My skills lie in both Frontend and Backend Development and I am
+				proficient in working with the full stack. Recently, I have taken an interest in
+				Artificial Technology (AI) and Machine Learning (ML).
 			</p>
 			<Button title="Download CV" onClick={downloadResume} />
 		</div>
@@ -90,7 +89,7 @@
 				<li class="flex">
 					<span class="title">Frameworks</span>
 					<span class="value"
-						>Svelte, SvelteKit, VueJS, Angular, React, ExpressJS, FastAPI</span
+						>Next.JS, Svelte, SvelteKit, VueJS, Angular, React, ExpressJS, FastAPI</span
 					>
 				</li>
 				<li class="flex">
