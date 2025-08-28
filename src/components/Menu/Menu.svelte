@@ -24,11 +24,11 @@
 					href="/portfolio"
 					isActive={$page.url.pathname === '/portfolio'}
 				/>
-				<MenuLink
+				<!-- <MenuLink
 					text="Contact"
 					href="/contact"
 					isActive={$page.url.pathname === '/contact'}
-				/>
+				/> -->
 			</ul>
 		</div>
 		<div class="links">

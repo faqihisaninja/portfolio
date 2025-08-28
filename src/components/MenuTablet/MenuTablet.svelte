@@ -28,12 +28,12 @@
 			href="/portfolio"
 			isActive={$page.url.pathname === '/portfolio'}
 		/>
-		<MenuLink
+		<!-- <MenuLink
 			tablet
 			text="Contact"
 			href="/contact"
 			isActive={$page.url.pathname === '/contact'}
-		/>
+		/> -->
 		<a href="https://github.com/faqihisaninja" class="links">
 			<img class="github" src="/github-mark/github-mark.png" alt="Github logo" />
 		</a>
